@@ -30,12 +30,38 @@ proxies:
     skip-cert-verify: true
 
 proxy-groups:
-  - name: "SELECT"
+  - name: "Fastest"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 30
+    tolerance: 50
+    proxies:
+      - "MoaV-77.223.214.116-Reality-nasim"
+
+  - name: "Auto"
+    type: fallback
+    url: "https://www.gstatic.com/generate_204"
+    interval: 30
+    proxies:
+      - "MoaV-77.223.214.116-Reality-nasim"
+
+  - name: "Load-Balance"
+    type: load-balance
+    strategy: round-robin
+    interval: 30
+    url: "https://www.gstatic.com/generate_204"
+    proxies:
+      - "MoaV-77.223.214.116-Reality-nasim"
+
+  - name: "Select"
     type: select
     proxies:
+      - "Fastest"
+      - "Auto"
+      - "Load-Balance"
       - "MoaV-77.223.214.116-Reality-nasim"
       - DIRECT
 
 rules:
   - GEOIP,IR,DIRECT
-  - MATCH,SELECT
+  - MATCH,Select
