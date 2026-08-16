@@ -1,1 +1,41 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
 
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: redir-host
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+
+proxies:
+  - name: "MoaV-77.223.214.116-Reality-nasim"
+    type: vless
+    server: 77.223.214.116
+    port: 443
+    uuid: 9f0c9495-c1bb-4fee-bb40-f734c9e5394c
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    network: tcp
+    reality-opts:
+      public-key: FIV0s5uOv7tVa_kIwyghx0UvOC-c_Ey0UgYhjbSR4Aw
+      short-id: a91e86ea
+    servername: dl.google.com
+    client-fingerprint: random
+    skip-cert-verify: true
+
+proxy-groups:
+  - name: "SELECT"
+    type: select
+    proxies:
+      - "MoaV-77.223.214.116-Reality-nasim"
+      - DIRECT
+
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,SELECT
