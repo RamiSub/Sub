@@ -1,0 +1,1373 @@
+mixed-port: 7890
+ipv6: true
+allow-lan: false
+unified-delay: false
+log-level: warning
+mode: rule
+disable-keep-alive: false
+keep-alive-idle: 10
+keep-alive-interval: 15
+tcp-concurrent: true
+geo-auto-update: true
+geo-update-interval: 168
+external-controller: 127.0.0.1:9090
+external-controller-cors:
+    allow-origins:
+        - "*"
+    allow-private-network: true
+external-ui: ui
+external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
+
+profile:
+    store-selected: true
+    store-fake-ip: true
+
+dns:
+    enable: true
+    respect-rules: true
+    use-system-hosts: false
+    listen: 127.0.0.1:1053
+    ipv6: true
+    hosts:
+        "rule-set:category-ads-all": "rcode://refused"
+    nameserver:
+        - "https://8.8.8.8/dns-query#✅ Selector"
+    proxy-server-nameserver:
+        - "8.8.8.8#DIRECT"
+    direct-nameserver:
+        - "8.8.8.8#DIRECT"
+    direct-nameserver-follow-policy: true
+    enhanced-mode: redir-host
+
+tun:
+    enable: true
+    stack: mixed
+    auto-route: true
+    strict-route: true
+    auto-detect-interface: true
+    dns-hijack:
+        - "any:53"
+        - "tcp://any:53"
+    mtu: 9000
+
+sniffer:
+    enable: true
+    force-dns-mapping: true
+    parse-pure-ip: true
+    override-destination: true
+    sniff:
+        HTTP:
+            ports: [80, 8080, 8880, 2052, 2082, 2086, 2095]
+        TLS:
+            ports: [443, 8443, 2053, 2083, 2087, 2096]
+
+proxies:
+    - name: "📊 Used: 0.00 GB / Unlimited GB"
+      type: trojan
+      server: 127.0.0.1
+      port: 80
+      password: "72616d74-0000-4000-8000-696e00000000"
+      udp: true
+      tls: false
+    - name: "📅 Expiry: Never Expire (Never Expire)"
+      type: trojan
+      server: 127.0.0.1
+      port: 80
+      password: "72616d74-0000-4000-8000-696e00000000"
+      udp: true
+      tls: false
+    - name: "V-Core-443-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 443
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000000
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiaG5KNVd2cHNYUkEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-443-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 443
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiV0RtQktKS2R1M0giLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-443-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 443
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000001
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVWVka24wdElxSnUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-443-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 443
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidFc5NmFUNEhPYnkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxfQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-443-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 443
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000002
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiR0JOZHdobzVBdWgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-443-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 443
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoibGVqMmVFZHk3WWciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyfQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2053-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2053
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000003
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiTU5HYm13dGJhaWEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2053-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2053
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiWDA3V2dja0xHQnQiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozfQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2053-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2053
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000004
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiaVNDdmw1b3g1dkoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2053-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2053
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiQzBBOEx6R0NjS3IiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo0fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2053-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2053
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000005
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiSG1QWVV2RmQ2UEQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2053-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2053
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUU1yaGRJeEdERnQiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo1fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2083-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000006
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVkdDcU9pWGdiTGoiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2083-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUkV4bk5sV1JmcUsiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo2fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2083-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000007
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVkJPVkt2MGJwN3kiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2083-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiaXFUUGRkYTZkMmgiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo3fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2083-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000008
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidU1MVDlKaDFxTzUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2083-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2083
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiRWtIaHY2Z2k3SDAiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo4fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2087-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000009
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoib2NJekd6YnVLb1UiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2087-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoid0hIaFVlTHdGQzQiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4Ijo5fQ=="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2087-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000000a
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoicExlR0liWEhhVTEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2087-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiek5XUWpnTWtOcE0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxMH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2087-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000000b
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiN0cwMnp3WW5oSmgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2087-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2087
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVkhOODB4VEFoT3ciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxMX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2096-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000000c
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiM3NYMko3VXNBdHQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2096-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiWjdEaktheGlOUG0iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxMn0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2096-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000000d
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiRW9jZWNRNUtrRk0iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2096-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoieXp1ZWJLaks2b0YiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxM30="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2096-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000000e
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZDdZUWhqT2wwSFAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2096-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2096
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiYkRsSGQwMk5oTUwiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxNH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-8443-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000000f
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiR29nZlFRc0FnU3QiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-8443-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidGNoMHpydVd6c2giLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxNX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-8443-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000010
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoia0Nud3ExenRPNG8iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-8443-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiNURmR0tVdXk1WUYiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxNn0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-8443-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000011
+      udp: true
+      tls: true
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoib2VXZnk2azkyU2QiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-8443-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8443
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: true
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidEhpYzZsRDZvaG8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxN30="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-80-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 80
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000012
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVGNDQTEwVXhpczIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-80-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 80
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiQlNIamFNdTVESE8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxOH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-80-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 80
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000013
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoieG95MkVzb0ZWd0wiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-80-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 80
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiM01KUVJtektUUE4iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoxOX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-80-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 80
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000014
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZWt6cndHdXhUajUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-80-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 80
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiNjdiRjRwVDlvdGEiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyMH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-8080-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000015
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiU0pyamdkTnlMWVAiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-8080-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiSnFzTVRmTnpiNlMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyMX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-8080-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000016
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiMnp6V1JuWUJ0bmkiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-8080-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVTNIUmdVZzN0czciLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyMn0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-8080-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000017
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiNDhqMzdpdE13TGMiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-8080-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 8080
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiS0N4d0dFMWlacnkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyM30="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2082-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2082
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000018
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidlJwOW5KVWdOaXgiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2082-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2082
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiREhFUTByaXYwMTMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyNH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2082-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2082
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000019
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZUhoVWxUc01TaXEiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2082-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2082
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoieG1MWHRxTFhSRE8iLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyNX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2082-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2082
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000001a
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiOHFVRTdueEtlT3kiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2082-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2082
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiQUVZelFYbXJ3Y3EiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyNn0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2086-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000001b
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiUDhEOXRNd2hpUjUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2086-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiVVdZTWxpeG5rRlEiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyN30="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2086-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000001c
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoidmcyVWpSczNNZFUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2086-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiMUpoZDY3aThIc3giLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyOH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2086-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000001d
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiT2tCajdmVlpWZGsiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2086-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2086
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiT2pTenJiZ2FMd3oiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjoyOX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2095-RamtinGLX"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000001e
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiaGR1dGs3RVFoWm0iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2095-RamtinGLX"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoibWtKdzJtRHdVbmQiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozMH0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2095-RamtinGLX-1"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c60000001f
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiYkJFVzRpUVByQnYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2095-RamtinGLX-1"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiTE96M1Z1SmdMbUsiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozMX0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "V-Core-2095-RamtinGLX-2"
+      type: vless
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      uuid: 61a6bb7e-d194-38a0-8c11-e3c600000020
+      udp: true
+      tls: false
+      servername: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoibVVXeXpoaUR5eXYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119"
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+    - name: "T-Core-2095-RamtinGLX-2"
+      type: trojan
+      server: ramtinglx.ramtinglx.workers.dev
+      port: 2095
+      password: "61a6bb7e-d194-38a0-8c11-e3c658764861"
+      udp: true
+      tls: false
+      sni: ramtinglx.ramtinglx.workers.dev
+      client-fingerprint: chrome
+      network: ws
+      ws-opts:
+          path: "/eyJqdW5rIjoiZGQ4RlRZUUZRM1YiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjozMn0="
+          headers:
+              Host: ramtinglx.ramtinglx.workers.dev
+      skip-cert-verify: false
+      tfo: true
+
+proxy-groups:
+    - name: "✅ Selector"
+      type: select
+      proxies:
+          - "⚡ Fastest"
+          - "🖐 Manual"
+          - "🇩🇪 Germany"
+          - "🌐 Unknown"
+
+    - name: "⚡ Fastest"
+      type: url-test
+      url: "https://www.gstatic.com/generate_204"
+      interval: 30
+      tolerance: 50
+      proxies:
+          - "V-Core-443-RamtinGLX"
+          - "T-Core-443-RamtinGLX"
+          - "V-Core-443-RamtinGLX-1"
+          - "T-Core-443-RamtinGLX-1"
+          - "V-Core-443-RamtinGLX-2"
+          - "T-Core-443-RamtinGLX-2"
+          - "V-Core-2053-RamtinGLX"
+          - "T-Core-2053-RamtinGLX"
+          - "V-Core-2053-RamtinGLX-1"
+          - "T-Core-2053-RamtinGLX-1"
+          - "V-Core-2053-RamtinGLX-2"
+          - "T-Core-2053-RamtinGLX-2"
+          - "V-Core-2083-RamtinGLX"
+          - "T-Core-2083-RamtinGLX"
+          - "V-Core-2083-RamtinGLX-1"
+          - "T-Core-2083-RamtinGLX-1"
+          - "V-Core-2083-RamtinGLX-2"
+          - "T-Core-2083-RamtinGLX-2"
+          - "V-Core-2087-RamtinGLX"
+          - "T-Core-2087-RamtinGLX"
+          - "V-Core-2087-RamtinGLX-1"
+          - "T-Core-2087-RamtinGLX-1"
+          - "V-Core-2087-RamtinGLX-2"
+          - "T-Core-2087-RamtinGLX-2"
+          - "V-Core-2096-RamtinGLX"
+          - "T-Core-2096-RamtinGLX"
+          - "V-Core-2096-RamtinGLX-1"
+          - "T-Core-2096-RamtinGLX-1"
+          - "V-Core-2096-RamtinGLX-2"
+          - "T-Core-2096-RamtinGLX-2"
+          - "V-Core-8443-RamtinGLX"
+          - "T-Core-8443-RamtinGLX"
+          - "V-Core-8443-RamtinGLX-1"
+          - "T-Core-8443-RamtinGLX-1"
+          - "V-Core-8443-RamtinGLX-2"
+          - "T-Core-8443-RamtinGLX-2"
+          - "V-Core-80-RamtinGLX"
+          - "T-Core-80-RamtinGLX"
+          - "V-Core-80-RamtinGLX-1"
+          - "T-Core-80-RamtinGLX-1"
+          - "V-Core-80-RamtinGLX-2"
+          - "T-Core-80-RamtinGLX-2"
+          - "V-Core-8080-RamtinGLX"
+          - "T-Core-8080-RamtinGLX"
+          - "V-Core-8080-RamtinGLX-1"
+          - "T-Core-8080-RamtinGLX-1"
+          - "V-Core-8080-RamtinGLX-2"
+          - "T-Core-8080-RamtinGLX-2"
+          - "V-Core-2082-RamtinGLX"
+          - "T-Core-2082-RamtinGLX"
+          - "V-Core-2082-RamtinGLX-1"
+          - "T-Core-2082-RamtinGLX-1"
+          - "V-Core-2082-RamtinGLX-2"
+          - "T-Core-2082-RamtinGLX-2"
+          - "V-Core-2086-RamtinGLX"
+          - "T-Core-2086-RamtinGLX"
+          - "V-Core-2086-RamtinGLX-1"
+          - "T-Core-2086-RamtinGLX-1"
+          - "V-Core-2086-RamtinGLX-2"
+          - "T-Core-2086-RamtinGLX-2"
+          - "V-Core-2095-RamtinGLX"
+          - "T-Core-2095-RamtinGLX"
+          - "V-Core-2095-RamtinGLX-1"
+          - "T-Core-2095-RamtinGLX-1"
+          - "V-Core-2095-RamtinGLX-2"
+          - "T-Core-2095-RamtinGLX-2"
+
+    - name: "🖐 Manual"
+      type: select
+      proxies:
+          - "V-Core-443-RamtinGLX"
+          - "T-Core-443-RamtinGLX"
+          - "V-Core-443-RamtinGLX-1"
+          - "T-Core-443-RamtinGLX-1"
+          - "V-Core-443-RamtinGLX-2"
+          - "T-Core-443-RamtinGLX-2"
+          - "V-Core-2053-RamtinGLX"
+          - "T-Core-2053-RamtinGLX"
+          - "V-Core-2053-RamtinGLX-1"
+          - "T-Core-2053-RamtinGLX-1"
+          - "V-Core-2053-RamtinGLX-2"
+          - "T-Core-2053-RamtinGLX-2"
+          - "V-Core-2083-RamtinGLX"
+          - "T-Core-2083-RamtinGLX"
+          - "V-Core-2083-RamtinGLX-1"
+          - "T-Core-2083-RamtinGLX-1"
+          - "V-Core-2083-RamtinGLX-2"
+          - "T-Core-2083-RamtinGLX-2"
+          - "V-Core-2087-RamtinGLX"
+          - "T-Core-2087-RamtinGLX"
+          - "V-Core-2087-RamtinGLX-1"
+          - "T-Core-2087-RamtinGLX-1"
+          - "V-Core-2087-RamtinGLX-2"
+          - "T-Core-2087-RamtinGLX-2"
+          - "V-Core-2096-RamtinGLX"
+          - "T-Core-2096-RamtinGLX"
+          - "V-Core-2096-RamtinGLX-1"
+          - "T-Core-2096-RamtinGLX-1"
+          - "V-Core-2096-RamtinGLX-2"
+          - "T-Core-2096-RamtinGLX-2"
+          - "V-Core-8443-RamtinGLX"
+          - "T-Core-8443-RamtinGLX"
+          - "V-Core-8443-RamtinGLX-1"
+          - "T-Core-8443-RamtinGLX-1"
+          - "V-Core-8443-RamtinGLX-2"
+          - "T-Core-8443-RamtinGLX-2"
+          - "V-Core-80-RamtinGLX"
+          - "T-Core-80-RamtinGLX"
+          - "V-Core-80-RamtinGLX-1"
+          - "T-Core-80-RamtinGLX-1"
+          - "V-Core-80-RamtinGLX-2"
+          - "T-Core-80-RamtinGLX-2"
+          - "V-Core-8080-RamtinGLX"
+          - "T-Core-8080-RamtinGLX"
+          - "V-Core-8080-RamtinGLX-1"
+          - "T-Core-8080-RamtinGLX-1"
+          - "V-Core-8080-RamtinGLX-2"
+          - "T-Core-8080-RamtinGLX-2"
+          - "V-Core-2082-RamtinGLX"
+          - "T-Core-2082-RamtinGLX"
+          - "V-Core-2082-RamtinGLX-1"
+          - "T-Core-2082-RamtinGLX-1"
+          - "V-Core-2082-RamtinGLX-2"
+          - "T-Core-2082-RamtinGLX-2"
+          - "V-Core-2086-RamtinGLX"
+          - "T-Core-2086-RamtinGLX"
+          - "V-Core-2086-RamtinGLX-1"
+          - "T-Core-2086-RamtinGLX-1"
+          - "V-Core-2086-RamtinGLX-2"
+          - "T-Core-2086-RamtinGLX-2"
+          - "V-Core-2095-RamtinGLX"
+          - "T-Core-2095-RamtinGLX"
+          - "V-Core-2095-RamtinGLX-1"
+          - "T-Core-2095-RamtinGLX-1"
+          - "V-Core-2095-RamtinGLX-2"
+          - "T-Core-2095-RamtinGLX-2"
+
+    - name: "🇩🇪 Germany"
+      type: url-test
+      url: "https://www.gstatic.com/generate_204"
+      interval: 30
+      tolerance: 50
+      proxies:
+          - "V-Core-443-RamtinGLX"
+          - "T-Core-443-RamtinGLX"
+          - "V-Core-443-RamtinGLX-2"
+          - "T-Core-443-RamtinGLX-2"
+          - "V-Core-2053-RamtinGLX"
+          - "T-Core-2053-RamtinGLX"
+          - "V-Core-2053-RamtinGLX-2"
+          - "T-Core-2053-RamtinGLX-2"
+          - "V-Core-2083-RamtinGLX"
+          - "T-Core-2083-RamtinGLX"
+          - "V-Core-2083-RamtinGLX-2"
+          - "T-Core-2083-RamtinGLX-2"
+          - "V-Core-2087-RamtinGLX"
+          - "T-Core-2087-RamtinGLX"
+          - "V-Core-2087-RamtinGLX-2"
+          - "T-Core-2087-RamtinGLX-2"
+          - "V-Core-2096-RamtinGLX"
+          - "T-Core-2096-RamtinGLX"
+          - "V-Core-2096-RamtinGLX-2"
+          - "T-Core-2096-RamtinGLX-2"
+          - "V-Core-8443-RamtinGLX"
+          - "T-Core-8443-RamtinGLX"
+          - "V-Core-8443-RamtinGLX-2"
+          - "T-Core-8443-RamtinGLX-2"
+          - "V-Core-80-RamtinGLX"
+          - "T-Core-80-RamtinGLX"
+          - "V-Core-80-RamtinGLX-2"
+          - "T-Core-80-RamtinGLX-2"
+          - "V-Core-8080-RamtinGLX"
+          - "T-Core-8080-RamtinGLX"
+          - "V-Core-8080-RamtinGLX-2"
+          - "T-Core-8080-RamtinGLX-2"
+          - "V-Core-2082-RamtinGLX"
+          - "T-Core-2082-RamtinGLX"
+          - "V-Core-2082-RamtinGLX-2"
+          - "T-Core-2082-RamtinGLX-2"
+          - "V-Core-2086-RamtinGLX"
+          - "T-Core-2086-RamtinGLX"
+          - "V-Core-2086-RamtinGLX-2"
+          - "T-Core-2086-RamtinGLX-2"
+          - "V-Core-2095-RamtinGLX"
+          - "T-Core-2095-RamtinGLX"
+          - "V-Core-2095-RamtinGLX-2"
+          - "T-Core-2095-RamtinGLX-2"
+
+    - name: "🌐 Unknown"
+      type: url-test
+      url: "https://www.gstatic.com/generate_204"
+      interval: 30
+      tolerance: 50
+      proxies:
+          - "V-Core-443-RamtinGLX-1"
+          - "T-Core-443-RamtinGLX-1"
+          - "V-Core-2053-RamtinGLX-1"
+          - "T-Core-2053-RamtinGLX-1"
+          - "V-Core-2083-RamtinGLX-1"
+          - "T-Core-2083-RamtinGLX-1"
+          - "V-Core-2087-RamtinGLX-1"
+          - "T-Core-2087-RamtinGLX-1"
+          - "V-Core-2096-RamtinGLX-1"
+          - "T-Core-2096-RamtinGLX-1"
+          - "V-Core-8443-RamtinGLX-1"
+          - "T-Core-8443-RamtinGLX-1"
+          - "V-Core-80-RamtinGLX-1"
+          - "T-Core-80-RamtinGLX-1"
+          - "V-Core-8080-RamtinGLX-1"
+          - "T-Core-8080-RamtinGLX-1"
+          - "V-Core-2082-RamtinGLX-1"
+          - "T-Core-2082-RamtinGLX-1"
+          - "V-Core-2086-RamtinGLX-1"
+          - "T-Core-2086-RamtinGLX-1"
+          - "V-Core-2095-RamtinGLX-1"
+          - "T-Core-2095-RamtinGLX-1"
+
+rules:
+    - DOMAIN-SUFFIX,ir,DIRECT
+    - DOMAIN-KEYWORD,gov.ir,DIRECT
+    - DOMAIN-SUFFIX,fa,DIRECT
+    - GEOIP,IR,DIRECT
+    - MATCH,✅ Selector
