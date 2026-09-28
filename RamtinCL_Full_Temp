@@ -13,12 +13,7 @@ dns:
     - 1.1.1.1
 
 proxies:
-
-  # =========================
-  # NASIM - REALITY
-  # =========================
-
-  - name: "Nasim"
+  - name: "MoaV-93.127.223.91-Reality-nasim"
     type: vless
     server: 93.127.223.91
     port: 443
@@ -34,216 +29,21 @@ proxies:
     client-fingerprint: random
     skip-cert-verify: true
 
-  # =========================
-  # RAMTIN - SHADOWSOCKS
-  # =========================
-
-  - name: "Ramtin-SS-PRO"
-    type: ss
-    server: 77.37.65.105
-    port: 2096
-    cipher: chacha20-ietf-poly1305
-    password: "9RKffdCMoEab09kJhYGZqGbo"
-    udp: true
-
-  - name: "Ramtin-SS2-PRO"
-    type: ss
-    server: 77.37.65.105
-    port: 2095
-    cipher: chacha20-ietf-poly1305
-    password: "KWVuxkEsLg35AagKPeqdrHXY"
-    udp: true
-
-  - name: "Ramtin-SS3-PRO"
-    type: ss
-    server: 77.37.65.105
-    port: 8447
-    cipher: chacha20-ietf-poly1305
-    password: "XsS4yljVQogFiwzr7IZBK2D9"
-    udp: true
-
-  # =========================
-  # RAMTIN - TROJAN
-  # =========================
-
-  - name: "Ramtin-TROJAN-PRO"
-    type: trojan
-    server: 77.37.65.105
-    port: 8080
-    password: "2I!L_Ft95U^St+u!(DvAXMxWgaQ9XxdB"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/2I!L_Ft95U^St+u!(DvAXMxWgaQ9XxdB/trojan1"
-      headers:
-        Host: 77.37.65.105
-    tls: false
-
-  - name: "Ramtin-TROJAN2-PRO"
-    type: trojan
-    server: 77.37.65.105
-    port: 2087
-    password: "LOOny(%%mCM_P0EJWEUInE!kamHZ6OP@"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/LOOny(%%mCM_P0EJWEUInE!kamHZ6OP@/trojan2"
-      headers:
-        Host: 77.37.65.105
-    tls: false
-
-  - name: "Ramtin-TROJAN3-PRO"
-    type: trojan
-    server: 77.37.65.105
-    port: 8446
-    password: "U+CPXi)$eKllz8)ZhUZCv0!)Zk74&Z@0"
-    udp: true
-    network: ws
-    ws-opts:
-      path: "/U+CPXi)$eKllz8)ZhUZCv0!)Zk74&Z@0/trojan3"
-      headers:
-        Host: 77.37.65.105
-    tls: false
-
-  # =========================
-  # RAMTIN - VLESS
-  # =========================
-
-  - name: "Ramtin-VLESS-PRO"
-    type: vless
-    server: 77.37.65.105
-    port: 443
-    uuid: 113e1388-e62e-4d0d-b6dd-0b051aa4b3d0
-    udp: true
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/113e1388-e62e-4d0d-b6dd-0b051aa4b3d0/vless1"
-      headers:
-        Host: 77.37.65.105
-    flow: xtls-rprx-vision
-
-  - name: "Ramtin-VLESS2-PRO"
-    type: vless
-    server: 77.37.65.105
-    port: 2053
-    uuid: 907fd690-ec9f-4b96-a1e3-6bd867a1b6a9
-    udp: true
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/907fd690-ec9f-4b96-a1e3-6bd867a1b6a9/vless2"
-      headers:
-        Host: 77.37.65.105
-    flow: xtls-rprx-vision
-
-  - name: "Ramtin-VLESS3-PRO"
-    type: vless
-    server: 77.37.65.105
-    port: 8444
-    uuid: cca6c8e2-7b6b-4480-bed5-262012bb4cbf
-    udp: true
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/cca6c8e2-7b6b-4480-bed5-262012bb4cbf/vless3"
-      headers:
-        Host: 77.37.65.105
-    flow: xtls-rprx-vision
-
-  # =========================
-  # RAMTIN - VMESS
-  # =========================
-
-  - name: "Ramtin-VMESS-PRO"
-    type: vmess
-    server: 77.37.65.105
-    port: 8443
-    uuid: 17b52ca9-656e-4931-9327-089f67cc10cd
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/17b52ca9-656e-4931-9327-089f67cc10cd/vmess1"
-      headers:
-        Host: 77.37.65.105
-
-  - name: "Ramtin-VMESS2-PRO"
-    type: vmess
-    server: 77.37.65.105
-    port: 2083
-    uuid: 57223f1e-d85f-4d25-be0f-27c1fdabe49a
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/57223f1e-d85f-4d25-be0f-27c1fdabe49a/vmess2"
-      headers:
-        Host: 77.37.65.105
-
-  - name: "Ramtin-VMESS3-PRO"
-    type: vmess
-    server: 77.37.65.105
-    port: 8445
-    uuid: 8b761110-e6c3-4a3d-bc64-ea265a026196
-    alterId: 0
-    cipher: auto
-    udp: true
-    tls: false
-    network: ws
-    ws-opts:
-      path: "/8b761110-e6c3-4a3d-bc64-ea265a026196/vmess3"
-      headers:
-        Host: 77.37.65.105
-
-  # =========================
-  # PROXY GROUPS
-  # =========================
-
 proxy-groups:
-
   - name: "Fastest"
     type: url-test
     url: "https://www.gstatic.com/generate_204"
     interval: 30
     tolerance: 50
     proxies:
-      - "Nasim"
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "MoaV-93.127.223.91-Reality-nasim"
 
   - name: "Auto"
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 30
     proxies:
-      - "Nasim"
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "MoaV-93.127.223.91-Reality-nasim"
 
   - name: "Load-Balance"
     type: load-balance
@@ -251,19 +51,7 @@ proxy-groups:
     interval: 30
     url: "https://www.gstatic.com/generate_204"
     proxies:
-      - "Nasim"
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "MoaV-93.127.223.91-Reality-nasim"
 
   - name: "Select"
     type: select
@@ -271,19 +59,7 @@ proxy-groups:
       - "Fastest"
       - "Auto"
       - "Load-Balance"
-      - "Nasim"
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "MoaV-93.127.223.91-Reality-nasim"
       - DIRECT
 
 rules:
