@@ -14,25 +14,6 @@ dns:
 
 proxies:
 
-  # =========================
-  # NASIM - REALITY
-  # =========================
-
-  - name: "Nasim"
-    type: vless
-    server: 93.127.223.91
-    port: 443
-    uuid: 9f0c9495-c1bb-4fee-bb40-f734c9e5394c
-    flow: xtls-rprx-vision
-    udp: true
-    tls: true
-    network: tcp
-    reality-opts:
-      public-key: FIV0s5uOv7tVa_kIwyghx0UvOC-c_Ey0UgYhjbSR4Aw
-      short-id: a91e86ea
-    servername: dl.google.com
-    client-fingerprint: random
-    skip-cert-verify: true
 
   # =========================
   # RAMTIN - SHADOWSOCKS
@@ -212,7 +193,6 @@ proxy-groups:
     interval: 30
     tolerance: 50
     proxies:
-      - "Nasim"
       - "Ramtin-SS-PRO"
       - "Ramtin-SS2-PRO"
       - "Ramtin-SS3-PRO"
@@ -231,7 +211,6 @@ proxy-groups:
     url: "https://www.gstatic.com/generate_204"
     interval: 30
     proxies:
-      - "Nasim"
       - "Ramtin-SS-PRO"
       - "Ramtin-SS2-PRO"
       - "Ramtin-SS3-PRO"
@@ -251,7 +230,6 @@ proxy-groups:
     interval: 30
     url: "https://www.gstatic.com/generate_204"
     proxies:
-      - "Nasim"
       - "Ramtin-SS-PRO"
       - "Ramtin-SS2-PRO"
       - "Ramtin-SS3-PRO"
@@ -271,7 +249,6 @@ proxy-groups:
       - "Fastest"
       - "Auto"
       - "Load-Balance"
-      - "Nasim"
       - "Ramtin-SS-PRO"
       - "Ramtin-SS2-PRO"
       - "Ramtin-SS3-PRO"
