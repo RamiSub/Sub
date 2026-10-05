@@ -1,4 +1,3 @@
-```yaml
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -339,4 +338,3 @@ proxy-groups:
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,Select
-```
