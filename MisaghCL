@@ -1,0 +1,378 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: false
+  enhanced-mode: redir-host
+  nameserver:
+    - 8.8.8.8
+    - 1.1.1.1
+
+proxies:
+
+  # =========================
+  # RAMTIN - VLESS REALITY
+  # =========================
+
+  - name: "Ramtin-REALITY-1"
+    type: vless
+    server: 93.127.223.91
+    port: 443
+    uuid: ddd43bcb-baec-4b0e-89ea-21f85ddb9fc1
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "168e194e"
+
+  - name: "Ramtin-REALITY-2"
+    type: vless
+    server: 93.127.223.91
+    port: 8448
+    uuid: ee389c72-bda7-4bfb-9785-cac512a2ce08
+    udp: true
+    tls: true
+    servername: www.apple.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "b1c47065"
+
+  - name: "Ramtin-REALITY-3"
+    type: vless
+    server: 93.127.223.91
+    port: 8449
+    uuid: 01122041-5348-4e94-95d0-8448748c10fa
+    udp: true
+    tls: true
+    servername: www.yahoo.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "7677d2ce"
+
+  # =========================
+  # RAMTIN - XHTTP REALITY
+  # =========================
+
+  - name: "Ramtin-XHTTP-1"
+    type: vless
+    server: 93.127.223.91
+    port: 8450
+    uuid: 782c8620-00d2-4a11-b21a-fec877ad541d
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: xhttp
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "168e194e"
+    xhttp-opts:
+      path: "/assets/782c8620-00d"
+
+  - name: "Ramtin-XHTTP-2"
+    type: vless
+    server: 93.127.223.91
+    port: 8451
+    uuid: a1665f0f-42f4-4bf9-a675-f0fc5841e372
+    udp: true
+    tls: true
+    servername: www.apple.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: xhttp
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "b1c47065"
+    xhttp-opts:
+      path: "/cdn/a1665f0f-42f"
+
+  - name: "Ramtin-XHTTP-3"
+    type: vless
+    server: 93.127.223.91
+    port: 8452
+    uuid: 46aecc30-8c2d-4c1c-b37d-c0ee9a1d58a4
+    udp: true
+    tls: true
+    servername: www.yahoo.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: xhttp
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "7677d2ce"
+    xhttp-opts:
+      path: "/api/46aecc30-8c2"
+
+  # =========================
+  # RAMTIN - gRPC REALITY
+  # =========================
+
+  - name: "Ramtin-gRPC-Reality"
+    type: vless
+    server: 93.127.223.91
+    port: 8446
+    uuid: ddd43bcb-baec-4b0e-89ea-21f85ddb9fc1
+    udp: true
+    tls: true
+    servername: www.microsoft.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: grpc
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "168e194e"
+    grpc-opts:
+      grpc-service-name: "grpc-ddd43bcb"
+
+  - name: "Ramtin-gRPC-Reality-2"
+    type: vless
+    server: 93.127.223.91
+    port: 8446
+    uuid: ee389c72-bda7-4bfb-9785-cac512a2ce08
+    udp: true
+    tls: true
+    servername: www.apple.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: grpc
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "b1c47065"
+    grpc-opts:
+      grpc-service-name: "grpc-ddd43bcb"
+
+  - name: "Ramtin-gRPC-Reality-3"
+    type: vless
+    server: 93.127.223.91
+    port: 8446
+    uuid: 01122041-5348-4e94-95d0-8448748c10fa
+    udp: true
+    tls: true
+    servername: www.yahoo.com
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    network: grpc
+    reality-opts:
+      public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
+      short-id: "7677d2ce"
+    grpc-opts:
+      grpc-service-name: "grpc-ddd43bcb"
+
+  # =========================
+  # RAMTIN - VLESS WS
+  # =========================
+
+  - name: "Ramtin-VLESS-WS-1"
+    type: vless
+    server: 93.127.223.91
+    port: 8080
+    uuid: 282f453e-cf0e-4dd6-82f6-2c39adaeafa1
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/282f453e-cf0e-4dd6-82f6-2c39adaeafa1/ws1"
+      headers:
+        Host: 93.127.223.91
+
+  - name: "Ramtin-VLESS-WS-2"
+    type: vless
+    server: 93.127.223.91
+    port: 8081
+    uuid: e55427e3-8ccd-498e-8c52-1815f77c2db4
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/e55427e3-8ccd-498e-8c52-1815f77c2db4/ws2"
+      headers:
+        Host: 93.127.223.91
+
+  # =========================
+  # RAMTIN - VMESS WS
+  # =========================
+
+  - name: "Ramtin-VMESS-WS-1"
+    type: vmess
+    server: 93.127.223.91
+    port: 8082
+    uuid: 351ddc91-50a1-445b-b646-d8e4e9286940
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/351ddc91-50a1-445b-b646-d8e4e9286940/vmess1"
+      headers:
+        Host: 93.127.223.91
+
+  - name: "Ramtin-VMESS-WS-2"
+    type: vmess
+    server: 93.127.223.91
+    port: 8083
+    uuid: 7dac4f80-12ff-47a7-a765-7f78982d6970
+    alterId: 0
+    cipher: auto
+    udp: true
+    tls: false
+    network: ws
+    ws-opts:
+      path: "/7dac4f80-12ff-47a7-a765-7f78982d6970/vmess2"
+      headers:
+        Host: 93.127.223.91
+
+  # =========================
+  # RAMTIN - SHADOWSOCKS
+  # =========================
+
+  - name: "Ramtin-SS-1"
+    type: ss
+    server: 93.127.223.91
+    port: 2096
+    cipher: chacha20-ietf-poly1305
+    password: "a8c94281234f08c0102e548369556b958376fc4774aee8ea"
+    udp: true
+
+  - name: "Ramtin-SS-2"
+    type: ss
+    server: 93.127.223.91
+    port: 2095
+    cipher: chacha20-ietf-poly1305
+    password: "e8e7d607d21dc58689b71d1869f76520c51f7ce696ec43e1"
+    udp: true
+
+  - name: "Ramtin-SS-3"
+    type: ss
+    server: 93.127.223.91
+    port: 8447
+    cipher: aes-256-gcm
+    password: "124b823c48b977eb29defd8e70cac458450799513bef155"
+    udp: true
+
+
+# =========================
+# PROXY GROUPS
+# =========================
+
+proxy-groups:
+
+  - name: "Fastest"
+    type: url-test
+    url: "https://www.gstatic.com/generate_204"
+    interval: 30
+    tolerance: 50
+    proxies:
+      - "Ramtin-REALITY-1"
+      - "Ramtin-REALITY-2"
+      - "Ramtin-REALITY-3"
+      - "Ramtin-XHTTP-1"
+      - "Ramtin-XHTTP-2"
+      - "Ramtin-XHTTP-3"
+      - "Ramtin-gRPC-Reality"
+      - "Ramtin-gRPC-Reality-2"
+      - "Ramtin-gRPC-Reality-3"
+      - "Ramtin-VLESS-WS-1"
+      - "Ramtin-VLESS-WS-2"
+      - "Ramtin-VMESS-WS-1"
+      - "Ramtin-VMESS-WS-2"
+      - "Ramtin-SS-1"
+      - "Ramtin-SS-2"
+      - "Ramtin-SS-3"
+
+  - name: "Auto"
+    type: fallback
+    url: "https://www.gstatic.com/generate_204"
+    interval: 30
+    proxies:
+      - "Ramtin-REALITY-1"
+      - "Ramtin-REALITY-2"
+      - "Ramtin-REALITY-3"
+      - "Ramtin-XHTTP-1"
+      - "Ramtin-XHTTP-2"
+      - "Ramtin-XHTTP-3"
+      - "Ramtin-gRPC-Reality"
+      - "Ramtin-gRPC-Reality-2"
+      - "Ramtin-gRPC-Reality-3"
+      - "Ramtin-VLESS-WS-1"
+      - "Ramtin-VLESS-WS-2"
+      - "Ramtin-VMESS-WS-1"
+      - "Ramtin-VMESS-WS-2"
+      - "Ramtin-SS-1"
+      - "Ramtin-SS-2"
+      - "Ramtin-SS-3"
+
+  - name: "Load-Balance"
+    type: load-balance
+    strategy: round-robin
+    interval: 30
+    url: "https://www.gstatic.com/generate_204"
+    proxies:
+      - "Ramtin-REALITY-1"
+      - "Ramtin-REALITY-2"
+      - "Ramtin-REALITY-3"
+      - "Ramtin-XHTTP-1"
+      - "Ramtin-XHTTP-2"
+      - "Ramtin-XHTTP-3"
+      - "Ramtin-gRPC-Reality"
+      - "Ramtin-gRPC-Reality-2"
+      - "Ramtin-gRPC-Reality-3"
+      - "Ramtin-VLESS-WS-1"
+      - "Ramtin-VLESS-WS-2"
+      - "Ramtin-VMESS-WS-1"
+      - "Ramtin-VMESS-WS-2"
+      - "Ramtin-SS-1"
+      - "Ramtin-SS-2"
+      - "Ramtin-SS-3"
+
+  - name: "Select"
+    type: select
+    proxies:
+      - "Fastest"
+      - "Auto"
+      - "Load-Balance"
+
+      - "Ramtin-REALITY-1"
+      - "Ramtin-REALITY-2"
+      - "Ramtin-REALITY-3"
+
+      - "Ramtin-XHTTP-1"
+      - "Ramtin-XHTTP-2"
+      - "Ramtin-XHTTP-3"
+
+      - "Ramtin-gRPC-Reality"
+      - "Ramtin-gRPC-Reality-2"
+      - "Ramtin-gRPC-Reality-3"
+
+      - "Ramtin-VLESS-WS-1"
+      - "Ramtin-VLESS-WS-2"
+
+      - "Ramtin-VMESS-WS-1"
+      - "Ramtin-VMESS-WS-2"
+
+      - "Ramtin-SS-1"
+      - "Ramtin-SS-2"
+      - "Ramtin-SS-3"
+
+      - DIRECT
+
+
+# =========================
+# RULES
+# =========================
+
+rules:
+  - GEOIP,IR,DIRECT
+  - MATCH,Select
