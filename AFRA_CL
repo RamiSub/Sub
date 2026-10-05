@@ -1,3 +1,4 @@
+```yaml
 mixed-port: 7890
 allow-lan: false
 mode: rule
@@ -14,10 +15,6 @@ dns:
 
 proxies:
 
-  # =========================
-  # RAMTIN - VLESS REALITY
-  # =========================
-
   - name: "Ramtin-REALITY-1"
     type: vless
     server: 93.127.223.91
@@ -25,6 +22,7 @@ proxies:
     uuid: ddd43bcb-baec-4b0e-89ea-21f85ddb9fc1
     udp: true
     tls: true
+    network: tcp
     servername: www.microsoft.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
@@ -39,6 +37,7 @@ proxies:
     uuid: ee389c72-bda7-4bfb-9785-cac512a2ce08
     udp: true
     tls: true
+    network: tcp
     servername: www.apple.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
@@ -53,16 +52,13 @@ proxies:
     uuid: 01122041-5348-4e94-95d0-8448748c10fa
     udp: true
     tls: true
+    network: tcp
     servername: www.yahoo.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "7677d2ce"
-
-  # =========================
-  # RAMTIN - XHTTP REALITY
-  # =========================
 
   - name: "Ramtin-XHTTP-1"
     type: vless
@@ -71,10 +67,10 @@ proxies:
     uuid: 782c8620-00d2-4a11-b21a-fec877ad541d
     udp: true
     tls: true
-    servername: www.microsoft.com
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
     network: xhttp
+    flow: ""
+    servername: www.microsoft.com
+    client-fingerprint: chrome
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "168e194e"
@@ -88,10 +84,10 @@ proxies:
     uuid: a1665f0f-42f4-4bf9-a675-f0fc5841e372
     udp: true
     tls: true
-    servername: www.apple.com
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
     network: xhttp
+    flow: ""
+    servername: www.apple.com
+    client-fingerprint: chrome
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "b1c47065"
@@ -105,19 +101,15 @@ proxies:
     uuid: 46aecc30-8c2d-4c1c-b37d-c0ee9a1d58a4
     udp: true
     tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
     network: xhttp
+    flow: ""
+    servername: www.yahoo.com
+    client-fingerprint: chrome
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "7677d2ce"
     xhttp-opts:
       path: "/api/46aecc30-8c2"
-
-  # =========================
-  # RAMTIN - gRPC REALITY
-  # =========================
 
   - name: "Ramtin-gRPC-Reality"
     type: vless
@@ -126,10 +118,10 @@ proxies:
     uuid: ddd43bcb-baec-4b0e-89ea-21f85ddb9fc1
     udp: true
     tls: true
+    network: grpc
     servername: www.microsoft.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    network: grpc
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "168e194e"
@@ -143,10 +135,10 @@ proxies:
     uuid: ee389c72-bda7-4bfb-9785-cac512a2ce08
     udp: true
     tls: true
+    network: grpc
     servername: www.apple.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    network: grpc
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "b1c47065"
@@ -160,19 +152,15 @@ proxies:
     uuid: 01122041-5348-4e94-95d0-8448748c10fa
     udp: true
     tls: true
+    network: grpc
     servername: www.yahoo.com
     flow: xtls-rprx-vision
     client-fingerprint: chrome
-    network: grpc
     reality-opts:
       public-key: "EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI"
       short-id: "7677d2ce"
     grpc-opts:
       grpc-service-name: "grpc-ddd43bcb"
-
-  # =========================
-  # RAMTIN - VLESS WS
-  # =========================
 
   - name: "Ramtin-VLESS-WS-1"
     type: vless
@@ -199,10 +187,6 @@ proxies:
       path: "/e55427e3-8ccd-498e-8c52-1815f77c2db4/ws2"
       headers:
         Host: 93.127.223.91
-
-  # =========================
-  # RAMTIN - VMESS WS
-  # =========================
 
   - name: "Ramtin-VMESS-WS-1"
     type: vmess
@@ -234,10 +218,6 @@ proxies:
       headers:
         Host: 93.127.223.91
 
-  # =========================
-  # RAMTIN - SHADOWSOCKS
-  # =========================
-
   - name: "Ramtin-SS-1"
     type: ss
     server: 93.127.223.91
@@ -251,7 +231,7 @@ proxies:
     server: 93.127.223.91
     port: 2095
     cipher: chacha20-ietf-poly1305
-    password: "e8e7d607d21dc58689b71d1869f76520c51f7ce696ec43e1"
+    password: "e8e7d607d21dc58689b71d1869f76529c5c1f7ce696ec431"
     udp: true
 
   - name: "Ramtin-SS-3"
@@ -259,13 +239,8 @@ proxies:
     server: 93.127.223.91
     port: 8447
     cipher: aes-256-gcm
-    password: "124b823c48b977eb29defd8e70cac458450799513bef155"
+    password: "124b823c48b977eb29defd8e70cac4584507995513bef155"
     udp: true
-
-
-# =========================
-# PROXY GROUPS
-# =========================
 
 proxy-groups:
 
@@ -343,36 +318,25 @@ proxy-groups:
       - "Fastest"
       - "Auto"
       - "Load-Balance"
-
       - "Ramtin-REALITY-1"
       - "Ramtin-REALITY-2"
       - "Ramtin-REALITY-3"
-
       - "Ramtin-XHTTP-1"
       - "Ramtin-XHTTP-2"
       - "Ramtin-XHTTP-3"
-
       - "Ramtin-gRPC-Reality"
       - "Ramtin-gRPC-Reality-2"
       - "Ramtin-gRPC-Reality-3"
-
       - "Ramtin-VLESS-WS-1"
       - "Ramtin-VLESS-WS-2"
-
       - "Ramtin-VMESS-WS-1"
       - "Ramtin-VMESS-WS-2"
-
       - "Ramtin-SS-1"
       - "Ramtin-SS-2"
       - "Ramtin-SS-3"
-
       - DIRECT
-
-
-# =========================
-# RULES
-# =========================
 
 rules:
   - GEOIP,IR,DIRECT
   - MATCH,Select
+```
