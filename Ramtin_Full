@@ -10,3 +10,4 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlJhbXRpbi1WTUVTUzMtUFJPIiwNCiAgImFkZCI6
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkREdHeHU2bjB2M3RXa1ZhdXdVUU5EVDU@93.127.223.91:8447?#Ramtin-SS3-PRO
 aether://162.159.199.88:443?protocol=masque&scan=balanced&ip=v4&transport=h2#M1
 aether://162.159.195.10:2371?protocol=wg&scan=balanced&ip=v4#WG1
+aether://?protocol=wg-over-masque&scan=turbo&ip=v4&transport=h2&outer=162.159.198.198%3A443&psiphon=chain&psiphon_mode=auto#WG%20over%20Mas
