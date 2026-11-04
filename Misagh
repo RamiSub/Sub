@@ -21,3 +21,13 @@ vmess://eyJ2IjoiMiIsInBzIjoiRElBTU9ORC1CTEFDSy0xNzgtVk1FU1MtUFJPIiwiYWRkIjoiNzcu
 vmess://eyJ2IjoiMiIsInBzIjoiRElBTU9ORC1CTEFDSy0xNzgtVk1FU1MyLVBSTyIsImFkZCI6Ijc3LjM3LjY1LjEwNSIsInBvcnQiOiIyMDgzIiwiaWQiOiI1NzIyM2YxZS1kODVmLTRkMjUtYmUwZi0yN2MxZmRhYmU0OWEiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLzU3MjIzZjFlLWQ4NWYtNGQyNS1iZTBmLTI3YzFmZGFiZTQ5YS92bWVzczIiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI3Ny4zNy42NS4xMDUiLCJ0bHMiOiJub25lIn0=
 
 vmess://eyJ2IjoiMiIsInBzIjoiRElBTU9ORC1CTEFDSy0xNzgtVk1FU1MzLVBSTyIsImFkZCI6Ijc3LjM3LjY1LjEwNSIsInBvcnQiOiI4NDQ1IiwiaWQiOiI4Yjc2MTExMC1lNmMzLTRhM2QtYmM2NC1lYTI2NWEwMjYxOTYiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLzhiNzYxMTEwLWU2YzMtNGEzZC1iYzY0LWVhMjY1YTAyNjE5Ni92bWVzczMiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI3Ny4zNy42NS4xMDUiLCJ0bHMiOiJub25lIn0=
+
+aether://162.159.199.217:443?protocol=masque&scan=balanced&ip=v4&transport=h2#M1
+aether://162.159.195.28:864?protocol=wg&scan=balanced&ip=v4#W1
+aether://162.159.198.77:443?protocol=masque&scan=balanced&ip=v4&transport=h2&psiphon=chain&psiphon_mode=auto&region=DE#M2W-P
+aether://188.114.98.180:890?protocol=wg&scan=balanced&ip=v4&psiphon=chain&psiphon_mode=auto&region=DE#W2W-P
+aether://?protocol=gool&scan=balanced&ip=v4&outer=162.159.195.151%3A864&inner=162.159.195.1%3A500#WW
+aether://?protocol=gool&scan=balanced&ip=v4&outer=188.114.97.1%3A4500&inner=162.159.192.65%3A859&psiphon=chain&psiphon_mode=auto&region=DE#WW2W-P
+aether://?protocol=gool&scan=balanced&ip=v4&outer=188.114.96.1%3A1701&inner=162.159.195.169%3A864&tor=chain&tor_bridges=auto&tor_relays=auto#WW3W-T
+aether://?protocol=wg-over-masque&scan=turbo&ip=v4&transport=h2&outer=162.159.198.198%3A443#WM1
+aether://?protocol=wg-over-masque&scan=turbo&ip=v4&transport=h2&outer=162.159.198.198%3A443&psiphon=chain&psiphon_mode=auto&region=DE#WM2W-P
