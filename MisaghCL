@@ -14,12 +14,11 @@ dns:
 
 proxies:
 
-
   # =========================
-  # RAMTIN - SHADOWSOCKS
+  # DIAMOND-BLACK-178 - SHADOWSOCKS
   # =========================
 
-  - name: "Ramtin-SS-PRO"
+  - name: "DIAMOND-BLACK-178-SS-PRO"
     type: ss
     server: 77.37.65.105
     port: 2096
@@ -27,7 +26,7 @@ proxies:
     password: "9RKffdCMoEab09kJhYGZqGbo"
     udp: true
 
-  - name: "Ramtin-SS2-PRO"
+  - name: "DIAMOND-BLACK-178-SS2-PRO"
     type: ss
     server: 77.37.65.105
     port: 2095
@@ -35,7 +34,7 @@ proxies:
     password: "KWVuxkEsLg35AagKPeqdrHXY"
     udp: true
 
-  - name: "Ramtin-SS3-PRO"
+  - name: "DIAMOND-BLACK-178-SS3-PRO"
     type: ss
     server: 77.37.65.105
     port: 8447
@@ -44,10 +43,10 @@ proxies:
     udp: true
 
   # =========================
-  # RAMTIN - TROJAN
+  # DIAMOND-BLACK-178 - TROJAN
   # =========================
 
-  - name: "Ramtin-TROJAN-PRO"
+  - name: "DIAMOND-BLACK-178-TROJAN-PRO"
     type: trojan
     server: 77.37.65.105
     port: 8080
@@ -60,7 +59,7 @@ proxies:
         Host: 77.37.65.105
     tls: false
 
-  - name: "Ramtin-TROJAN2-PRO"
+  - name: "DIAMOND-BLACK-178-TROJAN2-PRO"
     type: trojan
     server: 77.37.65.105
     port: 2087
@@ -73,7 +72,7 @@ proxies:
         Host: 77.37.65.105
     tls: false
 
-  - name: "Ramtin-TROJAN3-PRO"
+  - name: "DIAMOND-BLACK-178-TROJAN3-PRO"
     type: trojan
     server: 77.37.65.105
     port: 8446
@@ -87,10 +86,10 @@ proxies:
     tls: false
 
   # =========================
-  # RAMTIN - VLESS
+  # DIAMOND-BLACK-178 - VLESS
   # =========================
 
-  - name: "Ramtin-VLESS-PRO"
+  - name: "DIAMOND-BLACK-178-VLESS-PRO"
     type: vless
     server: 77.37.65.105
     port: 443
@@ -104,7 +103,7 @@ proxies:
         Host: 77.37.65.105
     flow: xtls-rprx-vision
 
-  - name: "Ramtin-VLESS2-PRO"
+  - name: "DIAMOND-BLACK-178-VLESS2-PRO"
     type: vless
     server: 77.37.65.105
     port: 2053
@@ -118,7 +117,7 @@ proxies:
         Host: 77.37.65.105
     flow: xtls-rprx-vision
 
-  - name: "Ramtin-VLESS3-PRO"
+  - name: "DIAMOND-BLACK-178-VLESS3-PRO"
     type: vless
     server: 77.37.65.105
     port: 8444
@@ -133,10 +132,10 @@ proxies:
     flow: xtls-rprx-vision
 
   # =========================
-  # RAMTIN - VMESS
+  # DIAMOND-BLACK-178 - VMESS
   # =========================
 
-  - name: "Ramtin-VMESS-PRO"
+  - name: "DIAMOND-BLACK-178-VMESS-PRO"
     type: vmess
     server: 77.37.65.105
     port: 8443
@@ -151,7 +150,7 @@ proxies:
       headers:
         Host: 77.37.65.105
 
-  - name: "Ramtin-VMESS2-PRO"
+  - name: "DIAMOND-BLACK-178-VMESS2-PRO"
     type: vmess
     server: 77.37.65.105
     port: 2083
@@ -166,7 +165,7 @@ proxies:
       headers:
         Host: 77.37.65.105
 
-  - name: "Ramtin-VMESS3-PRO"
+  - name: "DIAMOND-BLACK-178-VMESS3-PRO"
     type: vmess
     server: 77.37.65.105
     port: 8445
@@ -193,36 +192,36 @@ proxy-groups:
     interval: 30
     tolerance: 50
     proxies:
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "DIAMOND-BLACK-178-SS-PRO"
+      - "DIAMOND-BLACK-178-SS2-PRO"
+      - "DIAMOND-BLACK-178-SS3-PRO"
+      - "DIAMOND-BLACK-178-TROJAN-PRO"
+      - "DIAMOND-BLACK-178-TROJAN2-PRO"
+      - "DIAMOND-BLACK-178-TROJAN3-PRO"
+      - "DIAMOND-BLACK-178-VLESS-PRO"
+      - "DIAMOND-BLACK-178-VLESS2-PRO"
+      - "DIAMOND-BLACK-178-VLESS3-PRO"
+      - "DIAMOND-BLACK-178-VMESS-PRO"
+      - "DIAMOND-BLACK-178-VMESS2-PRO"
+      - "DIAMOND-BLACK-178-VMESS3-PRO"
 
   - name: "Auto"
     type: fallback
     url: "https://www.gstatic.com/generate_204"
     interval: 30
     proxies:
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "DIAMOND-BLACK-178-SS-PRO"
+      - "DIAMOND-BLACK-178-SS2-PRO"
+      - "DIAMOND-BLACK-178-SS3-PRO"
+      - "DIAMOND-BLACK-178-TROJAN-PRO"
+      - "DIAMOND-BLACK-178-TROJAN2-PRO"
+      - "DIAMOND-BLACK-178-TROJAN3-PRO"
+      - "DIAMOND-BLACK-178-VLESS-PRO"
+      - "DIAMOND-BLACK-178-VLESS2-PRO"
+      - "DIAMOND-BLACK-178-VLESS3-PRO"
+      - "DIAMOND-BLACK-178-VMESS-PRO"
+      - "DIAMOND-BLACK-178-VMESS2-PRO"
+      - "DIAMOND-BLACK-178-VMESS3-PRO"
 
   - name: "Load-Balance"
     type: load-balance
@@ -230,18 +229,18 @@ proxy-groups:
     interval: 30
     url: "https://www.gstatic.com/generate_204"
     proxies:
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "DIAMOND-BLACK-178-SS-PRO"
+      - "DIAMOND-BLACK-178-SS2-PRO"
+      - "DIAMOND-BLACK-178-SS3-PRO"
+      - "DIAMOND-BLACK-178-TROJAN-PRO"
+      - "DIAMOND-BLACK-178-TROJAN2-PRO"
+      - "DIAMOND-BLACK-178-TROJAN3-PRO"
+      - "DIAMOND-BLACK-178-VLESS-PRO"
+      - "DIAMOND-BLACK-178-VLESS2-PRO"
+      - "DIAMOND-BLACK-178-VLESS3-PRO"
+      - "DIAMOND-BLACK-178-VMESS-PRO"
+      - "DIAMOND-BLACK-178-VMESS2-PRO"
+      - "DIAMOND-BLACK-178-VMESS3-PRO"
 
   - name: "Select"
     type: select
@@ -249,18 +248,18 @@ proxy-groups:
       - "Fastest"
       - "Auto"
       - "Load-Balance"
-      - "Ramtin-SS-PRO"
-      - "Ramtin-SS2-PRO"
-      - "Ramtin-SS3-PRO"
-      - "Ramtin-TROJAN-PRO"
-      - "Ramtin-TROJAN2-PRO"
-      - "Ramtin-TROJAN3-PRO"
-      - "Ramtin-VLESS-PRO"
-      - "Ramtin-VLESS2-PRO"
-      - "Ramtin-VLESS3-PRO"
-      - "Ramtin-VMESS-PRO"
-      - "Ramtin-VMESS2-PRO"
-      - "Ramtin-VMESS3-PRO"
+      - "DIAMOND-BLACK-178-SS-PRO"
+      - "DIAMOND-BLACK-178-SS2-PRO"
+      - "DIAMOND-BLACK-178-SS3-PRO"
+      - "DIAMOND-BLACK-178-TROJAN-PRO"
+      - "DIAMOND-BLACK-178-TROJAN2-PRO"
+      - "DIAMOND-BLACK-178-TROJAN3-PRO"
+      - "DIAMOND-BLACK-178-VLESS-PRO"
+      - "DIAMOND-BLACK-178-VLESS2-PRO"
+      - "DIAMOND-BLACK-178-VLESS3-PRO"
+      - "DIAMOND-BLACK-178-VMESS-PRO"
+      - "DIAMOND-BLACK-178-VMESS2-PRO"
+      - "DIAMOND-BLACK-178-VMESS3-PRO"
       - DIRECT
 
 rules:
