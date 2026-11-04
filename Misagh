@@ -1,20 +1,23 @@
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5UktmZmRDTW9FYWIwOWtKaFlHWnFHYm8=@77.37.65.105:2096#DIAMOND-BLACK-178-SS-PRO
 
-vless://ddd43bcb-baec-4b0e-89ea-21f85ddb9fc1@93.127.223.91:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.microsoft.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=168e194e&type=tcp#Ramtin-REALITY-1
-vless://ee389c72-bda7-4bfb-9785-cac512a2ce08@93.127.223.91:8448?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=b1c47065&type=tcp#Ramtin-REALITY-2
-vless://01122041-5348-4e94-95d0-8448748c10fa@93.127.223.91:8449?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=7677d2ce&type=tcp#Ramtin-REALITY-3
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpLV1Z1eGtFc0xnMzVBYWdLUGVxZHJIWFk=@77.37.65.105:2095#DIAMOND-BLACK-178-SS2-PRO
 
-vless://782c8620-00d2-4a11-b21a-fec877ad541d@93.127.223.91:8450?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.microsoft.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=168e194e&type=xhttp&path=%2Fassets%2F782c8620-00d#Ramtin-XHTTP-1
-vless://a1665f0f-42f4-4bf9-a675-f0fc5841e372@93.127.223.91:8451?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=b1c47065&type=xhttp&path=%2Fcdn%2Fa1665f0f-42f#Ramtin-XHTTP-2
-vless://46aecc30-8c2d-4c1c-b37d-c0ee9a1d58a4@93.127.223.91:8452?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=7677d2ce&type=xhttp&path=%2Fapi%2F46aecc30-8c2#Ramtin-XHTTP-3
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc1M0eWxqVlFvZ0Zpd3pyN0laQksyRDk=@77.37.65.105:8447#DIAMOND-BLACK-178-SS3-PRO
 
-vless://ddd43bcb-baec-4b0e-89ea-21f85ddb9fc1@93.127.223.91:8446?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.microsoft.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=168e194e&type=grpc&serviceName=grpc-ddd43bcb#Ramtin-gRPC-Reality
-vless://ee389c72-bda7-4bfb-9785-cac512a2ce08@93.127.223.91:8446?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.apple.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=b1c47065&type=grpc&serviceName=grpc-ddd43bcb#Ramtin-gRPC-Reality-2
-vless://01122041-5348-4e94-95d0-8448748c10fa@93.127.223.91:8446?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.yahoo.com&fp=chrome&pbk=EjN_lCmwUm8M-3uNyBlo9L3ynwVTOH64VMY8YU2gtgI&sid=7677d2ce&type=grpc&serviceName=grpc-ddd43bcb#Ramtin-gRPC-Reality-3
+trojan://2I!L_Ft95U^St+u!(DvAXMxWgaQ9XxdB@77.37.65.105:8080?path=/2I!L_Ft95U^St+u!(DvAXMxWgaQ9XxdB/trojan1&type=ws&security=none&host=77.37.65.105#DIAMOND-BLACK-178-TROJAN-PRO
 
-vless://282f453e-cf0e-4dd6-82f6-2c39adaeafa1@93.127.223.91:8080?encryption=none&security=none&type=ws&host=93.127.223.91&path=%2F282f453e-cf0e-4dd6-82f6-2c39adaeafa1%2Fws1#Ramtin-VLESS-WS-1
-vless://e55427e3-8ccd-498e-8c52-1815f77c2db4@93.127.223.91:8081?encryption=none&security=none&type=ws&host=93.127.223.91&path=%2Fe55427e3-8ccd-498e-8c52-1815f77c2db4%2Fws2#Ramtin-VLESS-WS-2
-vmess://eyJ2IjoiMiIsInBzIjoiUmFtdGluLVZNRVNTLVdTLTEiLCJhZGQiOiI5My4xMjcuMjIzLjkxIiwicG9ydCI6IjgwODIiLCJpZCI6IjM1MWRkYzkxLTUwYTEtNDQ1Yi1iNjQ2LWQ4ZTRlOTI4Njk0MCIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI5My4xMjcuMjIzLjkxIiwicGF0aCI6Ii8zNTFkZGM5MS01MGExLTQ0NWItYjY0Ni1kOGU0ZTkyODY5NDAvdm1lc3MxIiwidGxzIjoiIn0=
-vmess://eyJ2IjoiMiIsInBzIjoiUmFtdGluLVZNRVNTLVdTLTIiLCJhZGQiOiI5My4xMjcuMjIzLjkxIiwicG9ydCI6IjgwODMiLCJpZCI6IjdkYWM0ZjgwLTEyZmYtNDdhNy1hNzY1LTdmNzg5ODJkNjk3MCIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI5My4xMjcuMjIzLjkxIiwicGF0aCI6Ii83ZGFjNGY4MC0xMmZmLTQ3YTctYTc2NS03Zjc4OTgyZDY5NzAvdm1lc3MyIiwidGxzIjoiIn0=
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOGM5NDI4MTIzNGYwOGMwMTAyZTU0ODM2OTU1NmI5NTgzNzZmYzQ3NzRhZWU4ZWE=@93.127.223.91:2096#Ramtin-SS-1
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplOGU3ZDYwN2QyMWRjNTg2ODliNzFkMTg2OWY3NjUyOWM1YzFmN2NlNjk2ZWM0MzE=@93.127.223.91:2095#Ramtin-SS-2
-ss://YWVzLTI1Ni1nY206MTI0YjgyM2M0OGI5NzdlYjI5ZGVmZDhlNzBjYWM0NTg0NTA3OTk1NTEzYmVmMTU1@93.127.223.91:8447#Ramtin-SS-3
+trojan://LOOny(%%mCM_P0EJWEUInE!kamHZ6OP@@77.37.65.105:2087?path=/LOOny(%%mCM_P0EJWEUInE!kamHZ6OP@/trojan2&type=ws&security=none&host=77.37.65.105#DIAMOND-BLACK-178-TROJAN2-PRO
+
+trojan://U+CPXi)$eKllz8)ZhUZCv0!)Zk74&Z@0@77.37.65.105:8446?path=/U+CPXi)$eKllz8)ZhUZCv0!)Zk74&Z@0/trojan3&type=ws&security=none&host=77.37.65.105#DIAMOND-BLACK-178-TROJAN3-PRO
+
+vless://113e1388-e62e-4d0d-b6dd-0b051aa4b3d0@77.37.65.105:443?security=none&encryption=none&path=/113e1388-e62e-4d0d-b6dd-0b051aa4b3d0/vless1&type=ws&host=77.37.65.105&flow=xtls-rprx-vision#DIAMOND-BLACK-178-VLESS-PRO
+
+vless://907fd690-ec9f-4b96-a1e3-6bd867a1b6a9@77.37.65.105:2053?security=none&encryption=none&path=/907fd690-ec9f-4b96-a1e3-6bd867a1b6a9/vless2&type=ws&host=77.37.65.105&flow=xtls-rprx-vision#DIAMOND-BLACK-178-VLESS2-PRO
+
+vless://cca6c8e2-7b6b-4480-bed5-262012bb4cbf@77.37.65.105:8444?security=none&encryption=none&path=/cca6c8e2-7b6b-4480-bed5-262012bb4cbf/vless3&type=ws&host=77.37.65.105&flow=xtls-rprx-vision#DIAMOND-BLACK-178-VLESS3-PRO
+
+vmess://eyJ2IjoiMiIsInBzIjoiRElBTU9ORC1CTEFDSy0xNzgtVk1FU1MtUFJPIiwiYWRkIjoiNzcuMzcuNjUuMTA1IiwicG9ydCI6Ijg0NDMiLCJpZCI6IjE3YjUyY2E5LTY1NmUtNDkzMS05MzI3LTA4OWY2N2NjMTBjZCIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvMTdiNTJjYTktNjU2ZS00OTMxLTkzMjctMDg5ZjY3Y2MxMGNkL3ZtZXNzMSIsInR5cGUiOiJub25lIiwiaG9zdCI6Ijc3LjM3LjY1LjEwNSIsInRscyI6Im5vbmUifQ==
+
+vmess://eyJ2IjoiMiIsInBzIjoiRElBTU9ORC1CTEFDSy0xNzgtVk1FU1MyLVBSTyIsImFkZCI6Ijc3LjM3LjY1LjEwNSIsInBvcnQiOiIyMDgzIiwiaWQiOiI1NzIyM2YxZS1kODVmLTRkMjUtYmUwZi0yN2MxZmRhYmU0OWEiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLzU3MjIzZjFlLWQ4NWYtNGQyNS1iZTBmLTI3YzFmZGFiZTQ5YS92bWVzczIiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI3Ny4zNy42NS4xMDUiLCJ0bHMiOiJub25lIn0=
+
+vmess://eyJ2IjoiMiIsInBzIjoiRElBTU9ORC1CTEFDSy0xNzgtVk1FU1MzLVBSTyIsImFkZCI6Ijc3LjM3LjY1LjEwNSIsInBvcnQiOiI4NDQ1IiwiaWQiOiI4Yjc2MTExMC1lNmMzLTRhM2QtYmM2NC1lYTI2NWEwMjYxOTYiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLzhiNzYxMTEwLWU2YzMtNGEzZC1iYzY0LWVhMjY1YTAyNjE5Ni92bWVzczMiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI3Ny4zNy42NS4xMDUiLCJ0bHMiOiJub25lIn0=
