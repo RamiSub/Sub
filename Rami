@@ -45,3 +45,8 @@ vless://f5acd1db-5b97-4420-9e27-6953f9456c98@www.speedtest.net:443?encryption=no
 aether://162.159.199.88:443?protocol=masque&scan=balanced&ip=v4&transport=h2#M1
 aether://162.159.195.10:2371?protocol=wg&scan=balanced&ip=v4#WG1
 aether://?protocol=wg-over-masque&scan=turbo&ip=v4&transport=h2&outer=162.159.198.198%3A443&psiphon=chain&psiphon_mode=auto#WG%20over%20Mas
+
+
+vless://f5acd1db-5b97-4420-9e27-6953f9456c98@long-tree-005e.jasmine2007.workers.dev:443?encryption=none&security=tls&sni=LONG-trEe-005E.JaSmInE2007.woRKeRs.DEV&fp=random&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=long-tree-005e.jasmine2007.workers.dev&path=%2FeyJqdW5rIjoicEl6TUJ2SEFDYXhnQjFtQSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ%3D%3D%3Fed%3D2560#%F0%9F%92%A6%205%20-%20VLESS%20-%20Domain%20%3A%20443
+vless://f5acd1db-5b97-4420-9e27-6953f9456c98@www.speedtest.net:443?encryption=none&security=tls&sni=LONg-tREE-005E.jasMINe2007.WorkeRS.dev&fp=random&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=long-tree-005e.jasmine2007.workers.dev&path=%2FeyJqdW5rIjoid3pYeTRaUzVoaVJESiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ%3D%3D%3Fed%3D2560#%F0%9F%92%A6%206%20-%20VLESS%20-%20Domain%20%3A%20443
+vless://f5acd1db-5b97-4420-9e27-6953f9456c98@104.21.12.93:443?encryption=none&security=tls&sni=LOng-Tree-005e.jASmine2007.wOrKeRS.Dev&fp=random&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=long-tree-005e.jasmine2007.workers.dev&path=%2FeyJqdW5rIjoib3lkd3N2RUNlNGFrVG9EIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMjYwMjpmYzU5OmIwOjY0OjpdIl19%3Fed%3D2560#%F0%9F%92%A6%207%20-%20VLESS%20-%20IPv4%20%3A%20443
